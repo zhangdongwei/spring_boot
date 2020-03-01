@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+spring-boot-01-helloword-quick/.mvn/
+spring-boot-01-helloword-quick/mvnw
+spring-boot-01-helloword-quick/mvnw.cmd
+spring-boot-01-helloworld/target/
+spring-boot-02-config/.mvn/
+spring-boot-02-config/mvnw
+spring-boot-02-config/mvnw.cmd
