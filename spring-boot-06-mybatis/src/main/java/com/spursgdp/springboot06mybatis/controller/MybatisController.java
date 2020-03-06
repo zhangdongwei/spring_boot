@@ -25,11 +25,25 @@ public class MybatisController {
         return departmentMapper.getDeptById(id);
     }
 
-    @GetMapping("/dept")
+    @GetMapping("/insertDept")
     public Department insertDepartment(Department dept) {
         log.info("插入Department: " + dept);
         departmentMapper.insertDept(dept);
         return dept;
+    }
+
+    @GetMapping("/updDept")
+    public Department updateDepartment(Department dept) {
+        log.info("修改Department: " + dept);
+        departmentMapper.updateDept(dept);
+        return dept;
+    }
+
+    @GetMapping("/delDept/{id}")
+    public String delDeptById(@PathVariable("id") Integer id) {
+        log.info("删除Department: " + id);
+        departmentMapper.deleteDeptById(id);
+        return "success";
     }
 
 }

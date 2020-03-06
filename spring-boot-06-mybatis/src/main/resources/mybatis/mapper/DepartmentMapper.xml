@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spursgdp.springboot06mybatis.mapper.DepartmentMapper">
+    <!--
+        public Department getDeptById(Integer id);
+        public Integer deleteDeptById(Integer id);
+        public Integer updateDept(Department dept);
+    -->
+
+    <select id="getDeptById" resultType="com.spursgdp.springboot06mybatis.bean.Department">
+        select * from department where id=#{id}
+    </select>
+    
+    <update id="updateDept">
+        UPDATE department d SET d.`department_name` = #{departmentName} WHERE d.`id` = #{id}
+    </update>
+
+    <delete id="deleteDeptById">
+        DELETE FROM department WHERE ID = #{id}
+    </delete>
+
+
+</mapper>

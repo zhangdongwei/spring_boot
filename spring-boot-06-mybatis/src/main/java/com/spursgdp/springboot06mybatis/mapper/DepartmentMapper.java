@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.*;
 //@Mapper
 public interface DepartmentMapper {
 
-    @Select("select * from department where id=#{id}")
+//    @Select("select * from department where id=#{id}")
     public Department getDeptById(Integer id);
 
     @Options(useGeneratedKeys = true,keyProperty = "id")
@@ -19,11 +19,11 @@ public interface DepartmentMapper {
     @Insert("insert into department(department_name) values(#{departmentName})")
     public Integer insertDept(Department dept);
 
-    @Delete("delete from department where id=#{id}")
+//    @Delete("delete from department where id=#{id}")
     public Integer deleteDeptById(Integer id);
 
 //    @Update("update department set departmentName=#{departmentName} where id=#{id}")
-    @Update("update department set department_name=#{departmentName} where id=#{id}")
+//    @Update("update department set department_name=#{departmentName} where id=#{id}")
     public Integer updateDept(Department dept);
 
 }
