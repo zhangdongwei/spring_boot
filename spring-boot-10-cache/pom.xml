@@ -46,11 +46,11 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <!-- apollo -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-client</artifactId>
             <version>1.5.1</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

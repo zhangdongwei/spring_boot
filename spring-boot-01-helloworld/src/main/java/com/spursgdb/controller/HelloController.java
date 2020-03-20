@@ -1,18 +1,19 @@
 package com.spursgdb.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author zhangdongwei
  * @create 2020-02-12-10:42
  */
-@Controller
+
+@RestController // @RestController = @RestBody + @Controller
 public class HelloController {
+
     @RequestMapping("/hello")
-    @ResponseBody
-    public String hello(){
+    public String hello() {
         return "Hello World!";
     }
+
 }
