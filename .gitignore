@@ -1,16 +1,35 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
+HELP.md
+target/
+~/
+!**/src/main/**
+!**/src/test/**
 
-# IntelliJ project files
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
 .idea
+*.iws
 *.iml
-out
-gen
-spring-boot-01-helloword-quick/.mvn/
-spring-boot-01-helloword-quick/mvnw
-spring-boot-01-helloword-quick/mvnw.cmd
-spring-boot-01-helloworld/target/
-spring-boot-02-config/.mvn/
-spring-boot-02-config/mvnw
-spring-boot-02-config/mvnw.cmd
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+workspace
+
+/.idea/workspace.xml
+/src/main/resources/rebel.xml

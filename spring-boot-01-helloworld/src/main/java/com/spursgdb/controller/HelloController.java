@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController // @RestController = @RestBody + @Controller
+//@CrossOrigin(origins = "http://localhost:8081")
 public class HelloController {
 
     @RequestMapping("/hello")
+//    @CrossOrigin(origins = "http://localhost:8081")
     public String hello() {
-        return "Hello World!";
+        return "Hello cors!";
     }
 
 }
