@@ -10,7 +10,8 @@
     <input type="button" value="GET" onclick="getData()">
     <script>
         function getData() {
-            $.get("http://localhost:8080/hello", function (msg) {
+            // $.get("http://localhost:8080/hello", function (msg) {
+            $.get("http://10.13.1.25:9090/platform/click/queryAllA", function (msg) {
                 $("#app").html(msg);
             })
         }
